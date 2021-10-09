@@ -5,7 +5,31 @@ body {
   
   /* --for PC--*/
   @media screen and (min-width: 480px){
-   
+  
+    .fade{
+      margin-top: 80vh;
+      text-align: center;
+      opacity : 0;
+      transition: opacity 3s;
+    }
+     
+    .fade.view{
+      opacity: 1;
+    }
+
+    .js-fadein{
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(20px);
+      transition: all 1s;
+    }
+
+    .js-fadein.is-show{
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0px);
+    }
+
     .type1 {
       background-color: rgba(39, 221, 69, 0.7);
       width :800px;
@@ -77,5 +101,16 @@ body {
   
     
   
-  }
   
+  .fade{
+    margin-top: 80vh;
+    text-align: center;
+    opacity : 0;
+    transition: opacity 3s;
+  }
+   
+  .fade.view{
+    opacity: 1;
+  }
+
+}
