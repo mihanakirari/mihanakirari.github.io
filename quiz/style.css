@@ -1,0 +1,164 @@
+body {
+    font-family: Verdana, Roboto, "Droid Sans", "游ゴシック", 
+    YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
+  }
+  *,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;/*rem算出をしやすくするために*/
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+  h1 {
+    padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
+    color: #494949;/*文字色*/
+    background: #f4f4f4;/*背景色*/
+    border-left: solid 5px #7db4e6;/*左線*/
+    border-bottom: solid 3px #d7d7d7;/*下線*/
+  } 
+  strong {
+    background: linear-gradient(transparent 70%, #a7d6ff 70%);
+  }
+  .btn--orange,
+a.btn--orange {
+  color: #fff;
+  background-color: #eb6100;
+}
+.btn--orange:hover,
+a.btn--orange:hover {
+  color: #fff;
+  background: #f56500;
+}
+
+a.btn--radius {
+   border-radius: 100vh;
+}
+  /* --for PC--*/
+  @media screen and (min-width: 480px){
+    .toumei {
+      background-color: rgba(39, 221, 69, 0.0);
+      width :1000px;
+      margin: 30px;
+      padding: 10px;
+      border: 2px solid rgb(0, 0, 0,0);
+      margin: 30px auto;
+      border-radius: 1.0em;
+      position: relative;
+      z-index: 1;
+    } 
+
+    .type1 {
+      background-color: rgba(39, 221, 69, 0.7);
+      width :100%;
+      margin: 30px;
+      padding: 10px;
+      border: 2px solid rgb(0, 0, 0);
+      margin: 30px auto;
+      border-radius: 1.0em;
+      position: relative;
+      z-index: 1;
+      font-size: 50px;
+    }
+      
+    
+
+    .type2 {
+      background-color: rgba(255,255,255,0.9);
+      width :800px;
+      margin: 30px;
+      padding: 10px;
+      border: 2px solid gray;
+      margin: 30px auto;
+      border-radius: 1.2em;
+      position: relative;
+      z-index: 1;
+    }
+  
+    .video {
+      width: 600px;
+      height: 450px;
+      margin: 0px 0px 0px 80px;
+    }
+    
+  }
+  
+  /* --for smartphone--*/
+  @media screen and (max-width: 480px){
+    input{ font-size:16px; }
+    
+    .type1 {
+      background-color: rgba(250, 250, 250, 0.7);
+      width :100%;
+      margin: 1px;
+      font-size: 20px;
+      padding: 1px;
+      border: 2px solid rgb(0, 0, 0);
+      margin: 3px auto;
+      border-radius: 0.2em;
+      position: relative;
+      z-index: 1;
+    }
+  
+    .type2 {
+      background-color: rgba(255,255,255,0.9);
+      width :340px;
+      margin: 1px;
+      padding: 1px;
+      border: 2px solid gray;
+      margin: 3px auto;
+      border-radius: 1.2em;
+      position: relative;
+      z-index: 1;
+    }
+  
+   
+    .video {
+      width: 320px;
+      height: 240;
+      margin: 0px 0px 0px 10px;
+    }
+  
+    
+  
+  
+  .fade{
+    margin-top: 80vh;
+    text-align: center;
+    opacity : 0;
+    transition: opacity 3s;
+  }
+   
+  .fade.view{
+    opacity: 1;
+  }
+
+}
